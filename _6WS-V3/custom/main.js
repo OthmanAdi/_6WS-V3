@@ -475,16 +475,16 @@ effectButtons.forEach(button => {
 //             .fadeIn(1000);
 //     }
 // });
-// $('[data-toggle=modal]').on('click', function (e) {
-//     var $target = $($(this).data('target'));
-//     $target.data('triggered', true);
-//     setTimeout(function () {
-//         if ($target.data('triggered')) {
-//             $target.modal('show').data('triggered', false);
-//         }
-//         ;
-//     }, 1000); // milliseconds
-//     return false;
-// });
+$('[data-toggle=modal]').on('click', function (e) {
+    var $target = $($(this).data('target'));
+    $target.data('triggered', true);
+    setTimeout(function () {
+        if ($target.data('triggered')) {
+            $target.modal('show').data('triggered', false);
+        }
+        ;
+    }, 0.1); // milliseconds
+    return false;
+});
 
 

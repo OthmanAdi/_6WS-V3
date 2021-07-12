@@ -267,7 +267,7 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     color: #fafafa;
-    text-shadow: 1px 1px #eaae2d, -6px -6px #000;
+    /*text-shadow: 1px 1px #eaae2d, -6px -6px #000;*/
     text-shadow: 3px 3px 3px black, 3px -3px 3px black, -3px 3px 3px black, -3px -3px 3px black;
     font-size: 80px;
     /*padding: 0 0 0 7%;*/
