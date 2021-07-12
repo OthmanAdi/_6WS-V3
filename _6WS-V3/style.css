@@ -1,0 +1,240 @@
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+    .TeamSegmentBigScreen {
+        display: none !important;
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+    .TeamSegmentBigScreen {
+        display: none !important;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+    .TeamSegmentBigScreen {
+        display: block !important;
+    }
+}
+
+/**/
+/**/
+/**/
+.SmallScreenTeamSegment {
+    position: relative;
+    text-align: center;
+}
+
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+    .SmallScreenTeamSegment {
+        display: block !important;
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+    .SmallScreenTeamSegment {
+        display: block !important;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+    .SmallScreenTeamSegment {
+        display: none !important;
+    }
+}
+
+/*
+* Hiding the Weeks section for Big Screens and showing it automatically with min of ipad 12 pro
+*/
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+    .BigScreenLook {
+        display: none !important;
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+    .BigScreenLook {
+        display: none !important;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+    .BigScreenLook {
+        display: block !important;
+    }
+}
+
+/*
+* Hiding the Weeks section for Small Screen and showing it automatically with min of ipad 10
+*/
+
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+    .SmallScreenLook {
+        display: block !important;
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+    .SmallScreenLook {
+        display: block !important;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+    .SmallScreenLook {
+        display: none !important;
+    }
+}
+
+
+.Btn-Team {
+    overflow: hidden;
+    /*padding: 12px 24px;*/
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(112, 112, 112, 0.73);
+    border-radius: 2em;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: available;
+    height: available !important;
+}
+
+.Btn-Team span {
+    color: #ffffff !important;
+    position: relative;
+    transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+.Btn-Team span:hover {
+    color: transparent !important;
+    position: relative;
+    transition: color 1.0s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.Btn-Team:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: #D44799;
+    transform: scaleX(0);
+    transform-origin: 50% 100%;
+    transition: transform 0.2s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.Btn-Team:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+.Btn-Team:hover span {
+    color: #e9e803!important;
+}
+
+.Btn-Team-PS {
+    overflow: hidden;
+    /*padding: 12px 24px;*/
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 10vh !important;
+}
+
+.Btn-Team-PS span {
+    word-spacing: 10em;
+    color: #343A40 !important;
+    position: relative;
+    transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.Btn-Team-PS:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D44799;
+    transform: scaleX(0);
+    transform-origin: 50% 100%;
+    transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.Btn-Team-PS:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+.Btn-Team-PS:hover span {
+    color: #e50000;
+}
+
+/**/
+/**/
+/*Code for The Preis section padding*/
+.padded {
+    padding: 2em 2em 2em 2em;
+}
+
+.padded-WS {
+    padding: 0em 0em 0em 0em;
+}
+
+.References {
+    display: block;
+    height: 100vh;
+    margin: auto;
+    width: available;
+    background-color: #0A1931;
+}
+
+.paddedRefrence {
+    position: relative;
+    top: 40vh !important;
+    text-align: center;
+}
+
+.accordion {
+    height: available !important;
+}
+
+.content-wrapper {
+    scroll-snap-type: y proximity;
+    max-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.SnapLook-E {
+    scroll-snap-align: end;
+}
+.SnapLook-C {
+    scroll-snap-align: center;
+}
+.SnapLook-S {
+    scroll-snap-align: start;
+}
+
+.SnapLook-Stop {
+    scroll-snap-stop: always;
+    scroll-behavior: auto;
+}

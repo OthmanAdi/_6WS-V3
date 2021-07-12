@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Testing Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<img id="change-image" src="https://images.freeimages.com/images/large-previews/d2f/tulips-1400882.jpg" width="500"
+     height="333">
+<button class="button3">Button1</button>
+<button class="button4">Button2</button>
+<script>
+	$('.button3').on({
+		'click': function () {
+			$("#change-image")
+					.fadeOut(3000, function () {
+						$('#change-image').attr('src', 'https://images.freeimages.com/images/large-previews/c98/ferns-3-1405636.jpg');
+					})
+					.fadeIn(3000);
+			
+		}
+	});
+	
+	$('.button4').on({
+		'click': function () {
+			$("#change-image")
+					.fadeOut(3000, function () {
+						$('#change-image').attr('src', 'https://images.freeimages.com/images/large-previews/d2f/tulips-1400882.jpg');
+					})
+					.fadeIn(3000);
+		}
+	});
+</script>
+<!--<style>-->
+<!--    .css-selector-demo {-->
+<!--        width: 30rem;-->
+<!--        height: 15rem;-->
+<!--        background-color: #aaffdd;-->
+<!--        border-radius: 1rem;-->
+<!--        display: flex;-->
+<!--        align-items: center;-->
+<!--        box-shadow: 2px 2px 4px #afafaf;-->
+<!--        justify-content: center;-->
+<!--        font-family: sans-serif;-->
+<!--        color: #9988ff;-->
+<!--        font-size: 1.5em;-->
+<!--    }-->
+
+<!--    body {-->
+<!--        height: 100vh;-->
+<!--        width: 100vw;-->
+<!--        display: flex;-->
+<!--        align-items: center;-->
+<!--        justify-content: center;-->
+<!--    }-->
+
+
+<!--    .click-zoom img {-->
+<!--        margin: 100px;-->
+<!--        transition: transform 10s ease-in-out;-->
+<!--        opacity: 1-->
+<!--    }-->
+
+<!--    label {-->
+<!--        color: red;-->
+<!--    }-->
+
+<!--    .click-zoom #checkbox0[type=checkbox]:checked ~ img {-->
+<!--        transform: scale(4);-->
+<!--        animation: 5s forwards fadeOut;-->
+<!--        /*-webkit-animation: 10s ease-out 0s normal backwards 0 fadeOut;*/-->
+<!--    }-->
+
+<!--    .click-zoom #checkbox1[type=checkbox]:checked ~ img {-->
+<!--        /*transform: scale(0);*/-->
+<!--        animation: 5s backwards scaleImgandFadeIn;-->
+<!--        /*-webkit-animation: 10s ease-out 0s normal backwards 0 fadeOut;*/-->
+<!--    }-->
+
+<!--    /**/-->
+<!--    /**/-->
+
+<!--    @keyframes scaleImgandFadeIn {-->
+<!--        0% {-->
+<!--            transform: scale(2.0);-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--        100% {-->
+<!--            transform: scale(1.0);-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-moz-keyframes scaleImgandFadeIn {-->
+<!--        0% {-->
+<!--            transform: scale(2.0);-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--        100% {-->
+<!--            transform: scale(1.0);-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-webkit-keyframes scaleImgandFadeIn {-->
+<!--        0% {-->
+<!--            transform: scale(2.0);-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--        100% {-->
+<!--            transform: scale(1.0);-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-o-keyframes scaleImgandFadeIn {-->
+<!--        0% {-->
+<!--            transform: scale(2.0);-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--        100% {-->
+<!--            transform: scale(1.0);-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-ms-keyframes scaleImgandFadeIn {-->
+<!--        0% {-->
+<!--            transform: scale(2.0);-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--        100% {-->
+<!--            transform: scale(1.0);-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--    }-->
+
+<!--    /**/-->
+<!--    /**/-->
+
+
+<!--    @keyframes fadeOut {-->
+<!--        0% {-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--        100% {-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-moz-keyframes fadeOut {-->
+<!--        0% {-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--        100% {-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-webkit-keyframes fadeOut {-->
+<!--        0% {-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--        100% {-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-o-keyframes fadeOut {-->
+<!--        0% {-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--        100% {-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--    }-->
+
+<!--    @-ms-keyframes fadeOut {-->
+<!--        0% {-->
+<!--            opacity: 1;-->
+<!--        }-->
+<!--        100% {-->
+<!--            opacity: 0;-->
+<!--        }-->
+<!--    }-->
+
+<!--    /*    */-->
+<!--    /*    */-->
+<!--    /*Scale Animation*/-->
+
+<!--    /*    */-->
+<!--    /*    */-->
+
+<!--</style>-->
+<!--&lt;!&ndash;<div class="css-selector-demo" id="card">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1 class="el">Hello World</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script src="anime/lib/anime.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    anime({&ndash;&gt;-->
+<!--&lt;!&ndash;        targets: '.css-selector-demo .el',&ndash;&gt;-->
+<!--&lt;!&ndash;        translateX: 50&ndash;&gt;-->
+<!--&lt;!&ndash;        // loop: true&ndash;&gt;-->
+<!--&lt;!&ndash;    });&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--<div class="click-zoom">-->
+<!--    <label>-->
+<!--        <label>-->
+<!--            FADE OUT-->
+<!--        </label>-->
+<!--        <input id="checkbox0" type="checkbox" class="btn"/>-->
+<!--        <label>-->
+<!--            FADE IN-->
+<!--        </label>-->
+<!--        <input id="checkbox1" type="checkbox" class="btn">-->
+<!--        <img src="https://via.placeholder.com/200">-->
+<!--    </label>-->
+<!--</div>-->
+</body>
+</html>
